@@ -2,18 +2,19 @@ import React from 'react';
 import ButtonSet from './ButtonSet';
 
 var data = [
-		[".",",","!",1],
-		["a","b","c",2],
-		["d","e","f",3],
-		["g","h","i",4],
-		["j","k","l",5],
-		["m","n","o",6],
-		["p","q","r","s",7],
-		["t","u","v",8],
-		["w","x","y","z",9],
-		["*"],
-		[0],
-		["#"]
+		{key:1 , data:[".",",","!",1]},
+		{key:2 , data:["a","b","c",2]},
+		{key:3 , data:["d","e","f",3]},
+		{key:4 , data:["g","h","i",4]},
+		{key:5 , data:["j","k","l",5]},
+		{key:6 , data:["m","n","o",6]},
+		{key:7 , data:["p","q","r","s",7]},
+		{key:8 , data:["t","u","v",8]},
+		{key:9 , data:["w","x","y","z",9]},
+		{key:10 , data:["*"]},
+		{key:11 , data:[0]},
+		{key:12 , data:["#"]},
+		
 	];
 
 class Container extends React.Component {
