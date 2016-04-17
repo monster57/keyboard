@@ -19,7 +19,8 @@ var data = [
 class Container extends React.Component {
 	render() {
 		return (
-			<div>
+			<div >
+				<input type="text" value="something"/>
 				<h1>Keypad</h1>
 			</div>
 		)
