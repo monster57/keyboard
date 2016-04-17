@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ButtonSet from './ButtonSet';
 
 var data = [
 		[".",",","!",1],
@@ -21,7 +21,7 @@ class Container extends React.Component {
 		return (
 			<div >
 				<input type="text" value="something"/>
-				<h1>Keypad</h1>
+				<ButtonSet data = {this.props.data}/>
 			</div>
 		)
 	}
@@ -29,6 +29,6 @@ class Container extends React.Component {
 
 
 React.render(
-	<Container />,
+	<Container data={data}/>,
 	document.getElementById('container')
 )
