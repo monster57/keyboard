@@ -5,12 +5,33 @@
     <link rel="stylesheet" href="public/css/global.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Exo+2:500' rel='stylesheet' type='text/css'>
+    <script type="text/javascript"     src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <title>Keyboard</title>
 </head>
 
 <body>
-    <div id="container"></div>
-    <script src="app.js"></script>
+    <div style="border: 1px black">
+        <div id="container"></div>
+        <script src="app.js"></script>
+    </div>
+    <div id="1">
+        My Content 1
+    </div>
+    <div id="2" style="display:none;">
+        My Dynamic Content
+    </div>
+    <button id="btnClick">Click me!</button>
+    <script type="text/javascript">
+    $('#btnClick').on('click', function() {
+        if ($('#1').css('display') != 'none') {
+            $('#2').html('Here is my dynamic content').show();
+            $('#1').hide();
+        } else if ($('#2').css('display') != 'none') {
+            $('#1').show();
+			$('#2').hide();            
+        }
+    });
+    </script>
 </body>
 
 </html>

@@ -161,7 +161,6 @@ class AppContainer extends React.Component {
           elapsed={this.state.elapsed}
           total={this.state.total}
           position={this.state.position}/>
-        <Footer />
       </div>
     );
   }
